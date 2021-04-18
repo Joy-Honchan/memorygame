@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="memory_game.css">
+</head>
+
+<body>
+
+    <div class="winningpic" id="showmedance">
+        <img id="joeychandlerdance" src="_image/matchgame/we_won.gif" alt="">
+        <h1 class="winningword">You Win!</h1>
+    </div>
+    <div class="leftpart">
+        <div id="starting">
+            <h2>Memory Game</h2>
+
+            <h4>Where the pictures are from:</h4>
+            <p> question-mark:<a href="https://www.freepik.com/vectors/abstract">Abstract vector created by starline -
+                    www.freepik.com</a>
+            </p>
+            <p> pizza:<a href='https://www.freepik.com/vectors/food'>Food vector created by catalyststuff -
+                    www.freepik.com</a>
+            </p>
+            <p> dog: <a href='https://www.freepik.com/vectors/food'>Food vector created by catalyststuff -
+                    www.freepik.com</a>
+            </p>
+            <p> astronaut: <a href='https://www.freepik.com/vectors/logo'>Logo vector created by catalyststuff -
+                    www.freepik.com</a>
+            </p>
+            <p> panda :<a href='https://www.freepik.com/vectors/character'>Character vector created by catalyststuff -
+                    www.freepik.com</a>
+            </p>
+            <p>elephant:<a href='https://www.freepik.com/vectors/baby'>Baby vector created by catalyststuff -
+                    www.freepik.com</a></p>
+            <p>alpaca:<a href='https://www.freepik.com/vectors/nature'>Nature vector created by catalyststuff -
+                    www.freepik.com</a></p>
+            <button onclick="refresh()">Start Again</button>
+
+
+        </div>
+
+    </div>
+    <section class="gameframe">
+        <!-- data-自己取名 是資料建立的一種方法 可用js 變數.dataset.自己取名 取得資料 -->
+        <div class="game_card" data-cardname="pizza" onclick="flipcard(event)">
+            <img class='front_face' id="pizza1" src="_image/matchgame/pizza.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="pizza" onclick="flipcard(event)">
+            <img class='front_face' id="pizzal2" src="_image/matchgame/pizza.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="dog" onclick="flipcard(event)">
+            <img class='front_face' id="dog1" src="_image/matchgame/dog.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="dog" onclick="flipcard(event)">
+            <img class='front_face' id="dog2" src="_image/matchgame/dog.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="panda" onclick="flipcard(event)">
+            <img class='front_face' id="panda1" src="_image/matchgame/panda.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="panda" onclick="flipcard(event)">
+            <img class='front_face' id="panda2" src="_image/matchgame/panda.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="astronaut" onclick="flipcard(event)">
+            <img class='front_face' id="astronaut1" src="_image/matchgame/astronaut.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="astronaut" onclick="flipcard(event)">
+            <img class='front_face' id="astronaut2" src="_image/matchgame/astronaut.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="elephant" onclick="flipcard(event)">
+            <img class='front_face' id="elephant1" src="_image/matchgame/elephant.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="elephant" onclick="flipcard(event)">
+            <img class='front_face' id="elephant2" src="_image/matchgame/elephant.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="alpaca" onclick="flipcard(event)">
+            <img class='front_face' id="alpaca1" src="_image/matchgame/alpaca.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+        <div class="game_card" data-cardname="alpaca" onclick="flipcard(event)">
+            <img class='front_face' id="alpaca2" src="_image/matchgame/alpaca.jpg" alt="">
+            <img class='back_face' src="_image/matchgame/memorygame_backcard.jpg" alt="">
+        </div>
+    </section>
+
+    <script src="memory_game.js"></script>
+</body>
+
+</html>
